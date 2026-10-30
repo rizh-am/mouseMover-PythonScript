@@ -1,5 +1,5 @@
-import threading
 import random
+import threading
 
 from pynput import keyboard
 from pynput.mouse import Controller
@@ -28,7 +28,6 @@ listener = keyboard.Listener(on_press=on_key_press)
 
 
 if __name__ == "__main__":
-
     listener.start()
 
     while not stop_requested.is_set():
