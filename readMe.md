@@ -4,7 +4,7 @@
 
 ---
 
-## Nudges your mouse every so often so Teams keeps you green while you're away. Press any key to stop it.
+### Nudges your mouse every so often so Teams keeps you green while you're away. Press any key to stop it.
 
 Yo!
 
@@ -25,10 +25,10 @@ But no promises.
 3. Navigate to that folder/repo from the terminal and paste `python3 -m venv .venv`. This creates a `.venv` folder.
 4. Paste and enter `source .venv/bin/activate` in the same terminal.
 5. Paste and enter `python3 -m pip install pynput` in the same terminal. This installs pynput.
-6. Open the repo folder in VS Code (you might need to install the Python extension if you haven't already). If the venv isn't picked up, press Cmd+Shift+P → "Python: Select Interpreter" and choose the one with `.venv` in it.
+6. Open the repo folder in VS Code (you might need to install the Python extension if you haven't already). If the venv isn't picked up, press Cmd+Shift+P → `Python: Select Interpreter` and choose the one with `.venv` in it.
 7. Try running the script. You will get an error saying something like VS Code does not have permissions.
 8. Click the popup and open Settings through it. It will take you straight to the right privacy settings.
-9. Enable Input Monitoring and Device and Data Control for VS Code and Terminal. I just do it this way because it is a bitch to find the right setting.
+9. Enable `Input Monitoring` and `Device and Data Control` for VS Code and Terminal. I just do it this way because it is a bitch to find the right setting.
 10. Try running the script again.
 11. It should move your mouse. Press any key to stop it.
 12. Now, from the VS Code terminal, type `which python` and copy the output _(it should end in `.venv/bin/python`)_.
@@ -56,6 +56,7 @@ You can now run the mouse mover by opening the `.command` file.
 - venv is a virtual environment for Python. Please google it for more info.
 - pynput is a third-party library that lets Python control the mouse and keyboard.
 - Whatever key you press to stop the program gets typed. Please check where it landed.
+- If you are using older macOS versions, you will need to enable `Privacy & Security > Accessibility` for VS Code and Terminal. `Device and Data Control` won't be there.
 
 ## Device Info
 
