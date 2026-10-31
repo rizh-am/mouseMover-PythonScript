@@ -1,17 +1,14 @@
+# Basically, this imports multi processing. Like running two threads at once
+import random
+
+# Imports pynput mouse
+import threading
+
 from pynput import keyboard
 
 # Imports pynput keyboard
 # It is a third party library that can scan your inputs
-
-from pynput.mouse import Button, Controller
-
-# Imports pynput mouse
-
-import threading
-
-# Basically, this imports multi processing. Like running two threads at once
-
-import random
+from pynput.mouse import Controller
 
 # imports the random library
 
